@@ -53,7 +53,7 @@ layout: page
       {% assign excerpt_word_count = post.excerpt | number_of_words %} {% if
       post.content != post.excerpt or excerpt_word_count > excerpt_length %}
       <a href="{{ post.url | absolute_url }}" class="post-read-more"
-        >[Pokračování&nbsp;textu]</a
+        >[Continue...]</a
       >
       {% endif %}
     </div>
@@ -76,13 +76,13 @@ layout: page
     <a
       class="page-link"
       href="{{ paginator.previous_page_path | absolute_url }}"
-      >&larr; Novější</a
+      >&larr; Newer</a
     >
   </li>
   {% endif %} {% if paginator.next_page %}
   <li class="page-item next">
     <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}"
-      >Starší &rarr;</a
+      >Older &rarr;</a
     >
   </li>
   {% endif %}
