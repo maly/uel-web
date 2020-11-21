@@ -1,0 +1,52 @@
+<html>
+
+<style>#binclude {
+	border:3px dotted blue;
+	height:300px;
+	width:300px;
+}
+</style>
+
+<div id="binclude"><h1>Drag your file here</h1>
+<div id="stat"></div>
+</div>
+
+<script>
+var compress=function(t){for(var r=function(t,r){var n=document.createElement("a");n.setAttribute("href","data:text/plain;charset=utf-8,"+r),n.setAttribute("download",t),n.click()},n=[],e=0;e<t.length;e++)void 0==n[t[e]]?n[t[e]]=1:n[t[e]]++;var o=[];for(i=0;256>i;i++)void 0!==n[i]&&o.push([n[i],i]);for(;o.length>1;){o.sort(function(t,r){return t[0]-r[0]});var a=[];for(a.push([o[0][0]+o[1][0],[o[0],o[1]]]),i=2;i<o.length;i++)a.push(o[i]);o=a}var h=[],g=function(t,r){return"number"==typeof r[1]?void(h[r[1]]=t):(g(t+"1",r[1][0]),void g(t+"0",r[1][1]))};g("",o[0]);var f=[],l=function(t){var r=f.length;f[r]=[0,0,0,0];var n=t[1][1];"number"==typeof n[1]?(f[r][0]=255,f[r][1]=n[1]):(f[r][0]=0,f[r][1]=r+1,l(n));var e=t[1][0],o=f.length;"number"==typeof e[1]?(f[r][2]=255,f[r][3]=e[1]):(f[r][2]=0,f[r][3]=o,l(e))};l(o[0]);for(var v="",u=0,i=0;i<t.length;i++)u=255&(u^t[i]);for(var s=u.toString(2);s.length<8;)s="0"+s;v+=s;for(var s=f.length.toString(2);s.length<8;)s="0"+s;v+=s;for(var i=0;i<f.length;i++){v+=255==f[i][0]?"1":"0";for(var s=f[i][1].toString(2);s.length<8;)s="0"+s;v+=s,v+=255==f[i][2]?"1":"0";for(var s=f[i][3].toString(2);s.length<8;)s="0"+s;v+=s}for(var s=(t.length%256).toString(2);s.length<8;)s="0"+s;v+=s;for(var s=Math.floor(t.length/256).toString(2);s.length<8;)s="0"+s;v+=s;for(var i=0;i<t.length;i++)v+=h[t[i]];for(var c=[],i=0;i<v.length;i+=8){for(var s=v.substr(i,8);s.length<8;)s+="0";c.push(parseInt(s,2))}var p=[];u=255;var d;p[0]=255;for(var i=0;i<c.length;i++)p.push(c[i]),u=255&(u^c[i]);p.push(u),d=p.length,p.unshift(d>>8),p.unshift(255&d);for(var m=function(t,r){for(var n=t.toString(16);n.length<r;)n="0"+n;return n.toUpperCase()},b=function(t){return m(255&t,2)},S="",i=0;i<p.length;i++)S+="%"+b(p[i]);var y=document.getElementById("stat");y.innerHTML="Original length: "+t.length+"<br>Packed:"+c.length,r(fn+".tap",S)};	
+//compress(file);
+//
+//
+var binclude;
+var fn;
+function dragenter(e) {e.stopPropagation();e.preventDefault();}
+
+function dragover(e) {e.stopPropagation();e.preventDefault();}
+function drop(e) {
+  e.stopPropagation();
+  e.preventDefault();
+
+  var dt = e.dataTransfer;
+  var files = dt.files;
+
+  var file = files[0];
+
+  var reader = new FileReader();
+  reader.onload = function(e) { var dta = (e.target.result); 
+  	//console.log(e.target);
+  	if (dta && dta.length<65536) {
+  		fn = file.name;
+  		var out=[];
+  		for (var i=0;i<dta.length;i++) {
+  			out.push(dta.charCodeAt(i));
+  		}
+  		compress(out);
+  	}
+  };
+  reader.readAsBinaryString(file);
+}
+binclude = document.getElementById("binclude");
+binclude.addEventListener("dragenter", dragenter, false);
+binclude.addEventListener("dragover", dragover, false);
+binclude.addEventListener("drop", drop, false);
+
+</script>
