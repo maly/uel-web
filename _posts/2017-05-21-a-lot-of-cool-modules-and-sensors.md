@@ -4,7 +4,7 @@ title: 'A lot of cool modules and sensors&#8230;'
 date: 2017-05-21T13:19:45+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=2250
+guid: https://www.uelectronics.info/?p=2250
 permalink: /2017/05/21/a-lot-of-cool-modules-and-sensors/
 categories:
   - Circuits
@@ -24,4 +24,4 @@ There are three tips per day at Alitronik, and each sunday is &#8220;[a Funday](
 
 From the recent post I want to mention e.g. [37 sensors kit](https://alitronik.com/37-in-1-sensor-kit-for-arduino-etc/), [CC-A80 Cubieboard PC](https://alitronik.com/cc-a80-cubieboard4-card-mini-pc/), [Speech Recognition Module](https://alitronik.com/non-specific-speech-recognition-module-ld3320/), [LoRa Shield for Arduino](https://alitronik.com/arduino-lora-shield/), [NodeMCU-32S](https://alitronik.com/nodemcu-32s-an-esp32-development-board/) or [SMD Tweezer and multimeter tool](https://alitronik.com/smd-tweezer-with-tester-and-multimeter/).
 
-So &#8211; bookmark [Alitronik.com](https://alitronik.com), read [Alitronik RSS](https://alitronik.com/feed), follow [@alitronik_tips](https://twitter.com/alitronik_tips), [subscribe weekly digest](http://eepurl.com/cODhwT) or [submit your own tips](https://goo.gl/forms/DWC5Lb7rSGnYzKHe2).
+So &#8211; bookmark [Alitronik.com](https://alitronik.com), read [Alitronik RSS](https://alitronik.com/feed), follow [@alitronik_tips](https://twitter.com/alitronik_tips), [subscribe weekly digest](https://eepurl.com/cODhwT) or [submit your own tips](https://goo.gl/forms/DWC5Lb7rSGnYzKHe2).

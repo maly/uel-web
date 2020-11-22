@@ -4,7 +4,7 @@ title: 'ASM80 news: Breakpoints'
 date: 2015-01-17T21:32:13+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=465
+guid: https://www.uelectronics.info/?p=465
 permalink: /2015/01/17/asm80-news-breakpoints/
 categories:
   - My projects
@@ -12,7 +12,7 @@ categories:
 tags:
   - ASM80
 ---
-I&#8217;ve just uploaded brand new version of [ASM80 IDE](http://www.asm80.com). New build fixes bug in Z80 debugger and added new debug capability: Breakpoints.
+I&#8217;ve just uploaded brand new version of [ASM80 IDE](https://www.asm80.com). New build fixes bug in Z80 debugger and added new debug capability: Breakpoints.
 
 <!--more-->
 

@@ -4,7 +4,7 @@ title: 'ASM80: Debugging stuff'
 date: 2017-12-03T13:15:21+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=2269
+guid: https://www.uelectronics.info/?p=2269
 permalink: /2017/12/03/asm80-debugging-stuff/
 image: /wp-content/uploads/2017/12/db0.png
 categories:

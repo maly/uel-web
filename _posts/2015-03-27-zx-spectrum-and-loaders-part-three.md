@@ -4,7 +4,7 @@ title: 'ZX Spectrum and loaders &#8211; part three'
 date: 2015-03-27T09:21:00+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=480
+guid: https://www.uelectronics.info/?p=480
 permalink: /2015/03/27/zx-spectrum-and-loaders-part-three/
 image: /wp-content/uploads/2015/03/screenshot-www.youtube.com-2015-03-25-20-02-19.png
 categories:
@@ -327,7 +327,7 @@ When you chop the routine into pieces, you are left with two options. You either
 
 Calculating remaining time is more complicated than counting bytes. You either have to count every bit differently (a one bit is twice as long as a zero bit), or use an interrupt (yes, interrupt in loader!)
 
-I was looking for an example of the first approach, but before I could comment on it, [Busy](http://www.worldofspectrum.org/infoseekpub.cgi?regexp=^Busy+Software$) called me and said that he had found his [Overscan loader source code](http://busy.speccy.cz/tvorba/overscan.htm), asking me if I want to publish it. So here we go, with Busy&#8217;s courtesy, Overscan loader!
+I was looking for an example of the first approach, but before I could comment on it, [Busy](https://www.worldofspectrum.org/infoseekpub.cgi?regexp=^Busy+Software$) called me and said that he had found his [Overscan loader source code](https://busy.speccy.cz/tvorba/overscan.htm), asking me if I want to publish it. So here we go, with Busy&#8217;s courtesy, Overscan loader!
 
 (Time calculation and graphical effects are included!)
 

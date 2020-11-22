@@ -4,7 +4,7 @@ title: 'miniSpartan6+ : A Powerful FPGA Board and Easy to Use IDE'
 date: 2014-06-04T12:06:19+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=378
+guid: https://www.uelectronics.info/?p=378
 permalink: /2014/06/04/minispartan6-a-powerful-fpga-board-and-easy-to-use-ide/
 categories:
   - Other

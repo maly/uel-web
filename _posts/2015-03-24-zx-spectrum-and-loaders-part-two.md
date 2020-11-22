@@ -4,7 +4,7 @@ title: ZX Spectrum and loaders – part two
 date: 2015-03-24T15:31:02+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=475
+guid: https://www.uelectronics.info/?p=475
 permalink: /2015/03/24/zx-spectrum-and-loaders-part-two/
 image: /wp-content/uploads/2015/03/zxsloader2.png
 categories:
@@ -21,7 +21,7 @@ I unexpectedly discovered one nice piece about loaders which I would like to sha
 
 <!--more-->
 
-While elsewhere we often go from theory to practice, let&#8217;s do it the other way around this time and go straight to practice. Here&#8217;s [a .tzx file](http://retrocip.cz/zxs/games/loader.tzx), try to run it in the emulator&#8230;
+While elsewhere we often go from theory to practice, let&#8217;s do it the other way around this time and go straight to practice. Here&#8217;s [a .tzx file](https://retrocip.cz/zxs/games/loader.tzx), try to run it in the emulator&#8230;
 
 (a necessary break to download the file, start the emulator, start loading&#8230; wait a bit&#8230; well&#8230; hmm&#8230; and what is this, is this all?)
 
@@ -29,7 +29,7 @@ Yeah, that&#8217;s all. It is just screens loading from tape. I told you, there&
 
 Well there you go!
 
-In [the previous article](https://www.uelectronics.info/2015/03/21/zx-spectrum-and-loaders-part-one/ "ZX Spectrum and loaders – part one") I dandily claimed that [DigiSynth](http://www.worldofspectrum.org/infoseekid.cgi?id=0023689) was unpacking data during loading. _Wow, really? Wasn&#8217;t I just dreaming that? I do have a leaky memory after all&#8230;_ So I downloaded [DigiSynth](http://www.worldofspectrum.org/infoseekid.cgi?id=0023689), stared into the code for a while, and then I saw a familiar part: No, I wasn&#8217;t dreaming! Good, I wanted to let it go, but you know how this goes&#8230; In a subway, I started tinkering: After all, it cannot be that difficult to reconstruct the loader and make a packer for it &#8230; and Huffman compression is simple enough&#8230;
+In [the previous article](https://www.uelectronics.info/2015/03/21/zx-spectrum-and-loaders-part-one/ "ZX Spectrum and loaders – part one") I dandily claimed that [DigiSynth](https://www.worldofspectrum.org/infoseekid.cgi?id=0023689) was unpacking data during loading. _Wow, really? Wasn&#8217;t I just dreaming that? I do have a leaky memory after all&#8230;_ So I downloaded [DigiSynth](https://www.worldofspectrum.org/infoseekid.cgi?id=0023689), stared into the code for a while, and then I saw a familiar part: No, I wasn&#8217;t dreaming! Good, I wanted to let it go, but you know how this goes&#8230; In a subway, I started tinkering: After all, it cannot be that difficult to reconstruct the loader and make a packer for it &#8230; and Huffman compression is simple enough&#8230;
 
 ## Huffman compression
 
@@ -39,7 +39,7 @@ The simplest compression methods are those which eliminate long sequences of byt
 
 Better compression methods exploit the fact that some sequences are often repeated. They therefore create a dictionary of repeating sequences, and replace those sequences with short codes. That is why they are called &#8220;dictionary methods&#8221;. They are based on ancient dictionary algorithms, namely LZ (Lempel-Ziv).
 
-Mr. Huffman have chosen [another approach](http://cs.wikipedia.org/wiki/Huffmanovo_k%C3%B3dov%C3%A1n%C3%AD), he suggested compression based not on sequences, but the frequency of occurrence of certain values. In short, it takes all values in the file (eg bytes, so 0 to 255) and count how many times the value occurs in the input file. Using this information it creates a code for each value (a sequence of bits), which has a property that the more frequent the value, the shorter the sequence. For example, those screens have very often zeroes in them. If there really is a frequent occurence of a zero value, it is encoded into some two bits. Even into one, in an extreme case. Yes, on the other hand, the less frequent values can easily occupy twelve or fifteen bits. But this loss is more than made up for by those frequent values.
+Mr. Huffman have chosen [another approach](https://cs.wikipedia.org/wiki/Huffmanovo_k%C3%B3dov%C3%A1n%C3%AD), he suggested compression based not on sequences, but the frequency of occurrence of certain values. In short, it takes all values in the file (eg bytes, so 0 to 255) and count how many times the value occurs in the input file. Using this information it creates a code for each value (a sequence of bits), which has a property that the more frequent the value, the shorter the sequence. For example, those screens have very often zeroes in them. If there really is a frequent occurence of a zero value, it is encoded into some two bits. Even into one, in an extreme case. Yes, on the other hand, the less frequent values can easily occupy twelve or fifteen bits. But this loss is more than made up for by those frequent values.
 
 If the input file contains different values and all of them have approximately the same count, then Huffman compression becomes ineffective, but it gives back good results for regular files. It is also often used to compress the values of LZ compression dictionary (LZHUF). It is also used in JPEG algorithm&#8230;
 
@@ -82,7 +82,7 @@ Suppose incoming bits will be 0, 1, 0, 0, 1, 1, 0, &#8230; What will happen?
 
 ## Implementation
 
-I wrote the compression algorithm in JavaScript. [You can use it yourself](http://retrocip.cz/zxs/games/huffman.html), it is a standard HTML page, where you use drag and drop to transfer the file you want to compress, and it returns .tap file with the result, suitable for the loader. _Warning: IE3 running on Pentium MMX will probably not work. It doesn&#8217;t even work with new IE. Use Chrome or Firefox, thanks._
+I wrote the compression algorithm in JavaScript. [You can use it yourself](https://retrocip.cz/zxs/games/huffman.html), it is a standard HTML page, where you use drag and drop to transfer the file you want to compress, and it returns .tap file with the result, suitable for the loader. _Warning: IE3 running on Pentium MMX will probably not work. It doesn&#8217;t even work with new IE. Use Chrome or Firefox, thanks._
 
 The resulting file has the following format:
 
@@ -102,11 +102,11 @@ The routine does not check the flag byte nor the data length, all it needs is th
 
 The routine uses no special tricks, everything is as straightforward as I described above.
 
-Oh, and if you want, you can use it for your own creations, it is licensed under CC-0 (Public Domain) licence. Direct your thanks to the author of the original routine from [DigiSynth](http://www.worldofspectrum.org/infoseekid.cgi?id=0023689)&#8230;
+Oh, and if you want, you can use it for your own creations, it is licensed under CC-0 (Public Domain) licence. Direct your thanks to the author of the original routine from [DigiSynth](https://www.worldofspectrum.org/infoseekid.cgi?id=0023689)&#8230;
 
 Of course, it is possible to improve the compression, remove repetitive sequences, precompress, thereby resulting in improved compression ratio. However, my goal wasn&#8217;t a beefy compressor, but to show you how you can incorporate an interesting functionality into a loader.
 
-PS: [Manic Miner, the Huffman way](http://retrocip.cz/zxs/games/hmanic.tzx)
+PS: [Manic Miner, the Huffman way](https://retrocip.cz/zxs/games/hmanic.tzx)
 
 <pre class="lang:asm decode:true">.ORG    $f000 ;61440
           .ENGINE zxs 

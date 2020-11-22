@@ -4,7 +4,7 @@ title: Generic Emulators for ASM80.com
 date: 2017-09-03T14:19:54+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=2258
+guid: https://www.uelectronics.info/?p=2258
 permalink: /2017/09/03/generic-emulators-for-asm80-com/
 categories:
   - "6502"

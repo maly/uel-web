@@ -4,7 +4,7 @@ title: ASM80 description
 date: 2014-03-30T08:59:36+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=331
+guid: https://www.uelectronics.info/?p=331
 permalink: /2014/03/30/asm80-description/
 categories:
   - Microprocessors
@@ -12,7 +12,7 @@ categories:
 tags:
   - ASM80
 ---
-My [online assembler ASM80](http://www.asm80.com) can assemble 6809 source code now. So let me show you its capabilities a little bit deeply.
+My [online assembler ASM80](https://www.asm80.com) can assemble 6809 source code now. So let me show you its capabilities a little bit deeply.
 
 <!--more-->
 
@@ -79,8 +79,8 @@ You can use common mathematics expressions instead simple literal. You can use a
 | .endif                        | End of the IF block                                                                                                                                                                                                                                                                                                                                      |
 | .include _filename_           | Include a file. The file is readed and the result is the same as if the file were copied in the current file instead of the INCLUDE line. The file included may contain INCLUDE directives, and so on. INCLUDE directives are processed before the assembly phases, so the use of IF directives to conditionally include different files is not allowed. |
 | .incbin _filename_            | Incbin stands for &#8220;include binary&#8221;. It allows any binary data to be included verbatim into the output. The argument is given in the same way as for include.                                                                                                                                                                                 |
-| .macro _macro_name_           | Defines a macro, see [the chapter about macros](http://www.asm80.com/doc/help.html#macros).                                                                                                                                                                                                                                                              |
-| .rept _počet_                 | Repeat a block of code substituing arguments. See [the chapter about macros](http://www.asm80.com/doc/help.html#macros).                                                                                                                                                                                                                                 |
+| .macro _macro_name_           | Defines a macro, see [the chapter about macros](https://www.asm80.com/doc/help.html#macros).                                                                                                                                                                                                                                                              |
+| .rept _počet_                 | Repeat a block of code substituing arguments. See [the chapter about macros](https://www.asm80.com/doc/help.html#macros).                                                                                                                                                                                                                                 |
 | .endm                         | End of MACRO definition or REPT cycle.                                                                                                                                                                                                                                                                                                                   |
 | .block                        | Start of logical block. All labels, defined in this block, are local. It means you can&#8217;t reference them from outside the block. If you want to define a label global, simply prefix it with &#8216;@&#8217;, like @LABEL:  
 Good idea is to enclose INCLUDEd code into block.                                                                      |

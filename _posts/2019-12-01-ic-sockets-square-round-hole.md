@@ -4,7 +4,7 @@ title: IC Sockets square / round hole
 date: 2019-12-01T17:49:56+01:00
 author: RSS reader
 layout: post
-guid: http://www.uelectronics.info/2019/12/01/ic-sockets-square-round-hole/
+guid: https://www.uelectronics.info/2019/12/01/ic-sockets-square-round-hole/
 permalink: /2019/12/01/ic-sockets-square-round-hole/
 rss_pi_source_url:
   - https://alitronik.com/ic-sockets-square-round-hole/

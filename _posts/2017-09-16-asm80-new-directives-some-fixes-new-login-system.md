@@ -4,7 +4,7 @@ title: 'ASM80: New directives, some fixes, new login system'
 date: 2017-09-16T11:06:43+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=2264
+guid: https://www.uelectronics.info/?p=2264
 permalink: /2017/09/16/asm80-new-directives-some-fixes-new-login-system/
 categories:
   - My projects

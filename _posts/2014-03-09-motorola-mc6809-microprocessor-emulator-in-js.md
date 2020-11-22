@@ -4,7 +4,7 @@ title: Motorola MC6809 microprocessor emulator in JS
 date: 2014-03-09T09:18:38+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=302
+guid: https://www.uelectronics.info/?p=302
 permalink: /2014/03/09/motorola-mc6809-microprocessor-emulator-in-js/
 categories:
   - Uncategorized
@@ -15,7 +15,7 @@ Here is another part of my [ASM80.com](https://www.uelectronics.info/2013/12/21/
 
 <!--more-->
 
-It&#8217;s alpha version, not optimized yet, no interrupts handled and CWAI instruction, but it works. I&#8217;ve tested it on [Grant Searle&#8217;s 6809 simple SBC](http://searle.hostei.com/grant/6809/Simple6809.html). The next step is Hitachi HD6309, so stay tuned!
+It&#8217;s alpha version, not optimized yet, no interrupts handled and CWAI instruction, but it works. I&#8217;ve tested it on [Grant Searle&#8217;s 6809 simple SBC](https://searle.hostei.com/grant/6809/Simple6809.html). The next step is Hitachi HD6309, so stay tuned!
 
 ## Usage
 

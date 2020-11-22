@@ -4,7 +4,7 @@ title: 'Assembler for 8080, Z80, 6502 and much more&#8230;'
 date: 2016-11-27T10:23:41+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=2209
+guid: https://www.uelectronics.info/?p=2209
 permalink: /2016/11/27/assembler-for-8080-z80-6502-and-much-more/
 suf_magazine_headline:
   - 'on'
@@ -24,9 +24,9 @@ tags:
   - assembler
   - Z80
 ---
-Readers certainly know my [ASM80](http://www.asm80.com/) &#8211; online assembler / IDE for eight-bit processors. I made several derived versions, like single page compiler, embedded version of the translator (I used it in tutorial [Stroják.cz](http://strojak.cz/)), or [a stand-alone IDE](http://www.ide80.com/). The good old command line assembler is here now too.
+Readers certainly know my [ASM80](https://www.asm80.com/) &#8211; online assembler / IDE for eight-bit processors. I made several derived versions, like single page compiler, embedded version of the translator (I used it in tutorial [Stroják.cz](https://strojak.cz/)), or [a stand-alone IDE](https://www.ide80.com/). The good old command line assembler is here now too.
 
-The prerequisite you have to meet is a functional Node.js environment. It is not complicated, it exists for all major platforms, and you can download it here: [nodejs.org](http://nodejs.org). During installation, package manager called NPM is installed too.
+The prerequisite you have to meet is a functional Node.js environment. It is not complicated, it exists for all major platforms, and you can download it here: [nodejs.org](https://nodejs.org). During installation, package manager called NPM is installed too.
 
 NPM is used for install the packages and libraries. To install ASM80 itself just run a command prompt and type:
 

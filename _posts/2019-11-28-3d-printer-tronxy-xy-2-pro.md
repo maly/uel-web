@@ -4,7 +4,7 @@ title: 3D Printer TRONXY XY-2 PRO
 date: 2019-11-28T07:55:49+01:00
 author: RSS reader
 layout: post
-guid: http://www.uelectronics.info/2019/11/28/3d-printer-tronxy-xy-2-pro/
+guid: https://www.uelectronics.info/2019/11/28/3d-printer-tronxy-xy-2-pro/
 permalink: /2019/11/28/3d-printer-tronxy-xy-2-pro/
 rss_pi_source_url:
   - https://alitronik.com/3d-printer-tronxy-xy-2-pro/

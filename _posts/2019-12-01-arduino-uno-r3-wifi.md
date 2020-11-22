@@ -4,7 +4,7 @@ title: Arduino UNO R3 + WiFi
 date: 2019-12-01T18:14:00+01:00
 author: RSS reader
 layout: post
-guid: http://www.uelectronics.info/2019/12/01/arduino-uno-r3-wifi/
+guid: https://www.uelectronics.info/2019/12/01/arduino-uno-r3-wifi/
 permalink: /2019/12/01/arduino-uno-r3-wifi/
 rss_pi_source_url:
   - https://alitronik.com/arduino-uno-r3-wifi/

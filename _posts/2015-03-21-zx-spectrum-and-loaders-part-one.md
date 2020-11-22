@@ -4,7 +4,7 @@ title: 'ZX Spectrum and loaders &#8211; part one'
 date: 2015-03-21T12:33:21+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=468
+guid: https://www.uelectronics.info/?p=468
 permalink: /2015/03/21/zx-spectrum-and-loaders-part-one/
 image: /wp-content/uploads/2015/03/jetpac_loadingscreen_3.jpg
 categories:
@@ -130,7 +130,7 @@ When reading data (which is what we are after here) processor then measured the 
 
 ## Assembler time
 
-Now this is the moment to extract the ROM contents (_taken from &#8216;The Complete Spectrum ROM Disassembly&#8217; by Dr. Ian Logan and Dr. Frank O&#8217;Hara, as published by Melbourne House in 1983, [available at WOS](http://www.worldofspectrum.org/ldbytes.html)_):
+Now this is the moment to extract the ROM contents (_taken from &#8216;The Complete Spectrum ROM Disassembly&#8217; by Dr. Ian Logan and Dr. Frank O&#8217;Hara, as published by Melbourne House in 1983, [available at WOS](https://www.worldofspectrum.org/ldbytes.html)_):
 
 <pre class="lang:asm decode:true ">THE 'LD-BYTES' SUBROUTINE
 This subroutine is called to LOAD the header information (from 076E) and later
@@ -426,7 +426,7 @@ During the loading we can certainly manage simpler operation with loaded data, e
 
 Mad Load used a very simple data format. After the flag byte, data for each square followed. Each took 11 bytes &#8211; lower and higher byte of a screen address where the square should be stored, then 8 bytes of video memory and a 1 byte of attribute. This was followed by another square &#8230;
 
-This loading routine was slightly modified by Frantisek Fuka ([FUXOFT](http://www.worldofspectrum.org/infoseekpub.cgi?regexp=^Fuxoft$)) &#8211; he made LD-8-BITS into a subroutine which reads 1 byte to register L. This subroutine is then used in another subroutine to retrieve one of the squares (MAD_SQUARE). Squares loading subroutine is then called over and over again until there is data to be loaded from the tape, and when there isn&#8217;t, it stops and returns back. There is no checksum performed or anything.
+This loading routine was slightly modified by Frantisek Fuka ([FUXOFT](https://www.worldofspectrum.org/infoseekpub.cgi?regexp=^Fuxoft$)) &#8211; he made LD-8-BITS into a subroutine which reads 1 byte to register L. This subroutine is then used in another subroutine to retrieve one of the squares (MAD_SQUARE). Squares loading subroutine is then called over and over again until there is data to be loaded from the tape, and when there isn&#8217;t, it stops and returns back. There is no checksum performed or anything.
 
 Here is the Mad Loader source code. I only commented on the parts that differ from the standard code.
 

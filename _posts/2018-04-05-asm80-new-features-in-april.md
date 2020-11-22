@@ -4,7 +4,7 @@ title: 'ASM80: New features in April'
 date: 2018-04-05T10:04:57+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=2273
+guid: https://www.uelectronics.info/?p=2273
 permalink: /2018/04/05/asm80-new-features-in-april/
 categories:
   - My projects

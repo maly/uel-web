@@ -4,7 +4,7 @@ title: OTTO Robot Kit
 date: 2019-12-01T18:29:41+01:00
 author: RSS reader
 layout: post
-guid: http://www.uelectronics.info/2019/12/01/otto-robot-kit/
+guid: https://www.uelectronics.info/2019/12/01/otto-robot-kit/
 permalink: /2019/12/01/otto-robot-kit/
 rss_pi_source_url:
   - https://alitronik.com/otto-robot-kit/

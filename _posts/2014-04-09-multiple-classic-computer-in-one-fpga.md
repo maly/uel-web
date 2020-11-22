@@ -4,13 +4,13 @@ title: Multiple classic computer in one FPGA
 date: 2014-04-09T11:56:20+01:00
 author: Martin Maly
 layout: post
-guid: http://www.uelectronics.info/?p=347
+guid: https://www.uelectronics.info/?p=347
 permalink: /2014/04/09/multiple-classic-computer-in-one-fpga/
 image: /wp-content/uploads/2014/04/wsb_394x296_MCC_216_webpage.jpg
 categories:
   - Other
 ---
-Multiple Classic Computer (aka [MCC](http://mcc-home.com/2.html)) is simple FPGA (Altera) based design with PS/2 mouse and keyboard and VGA / TV output. It can emulate Commodore C64 and Amiga 500, as well as Apple II, ZX Spectrum and Atari 2600. It provides &#8220;plug-and-play&#8221; concept. Games and architecture emulator are stored on SD card.[<img loading="lazy" class="aligncenter size-medium wp-image-348" alt="" src="https://www.uelectronics.info/wp-content/uploads/2014/04/wsb_394x296_MCC_216_webpage-300x225.jpg" width="300" height="225" srcset="https://www.uelectronics.info/wp-content/uploads/2014/04/wsb_394x296_MCC_216_webpage-300x225.jpg 300w, https://www.uelectronics.info/wp-content/uploads/2014/04/wsb_394x296_MCC_216_webpage.jpg 394w" sizes="(max-width: 300px) 100vw, 300px" />](https://www.uelectronics.info/wp-content/uploads/2014/04/wsb_394x296_MCC_216_webpage.jpg)
+Multiple Classic Computer (aka [MCC](https://mcc-home.com/2.html)) is simple FPGA (Altera) based design with PS/2 mouse and keyboard and VGA / TV output. It can emulate Commodore C64 and Amiga 500, as well as Apple II, ZX Spectrum and Atari 2600. It provides &#8220;plug-and-play&#8221; concept. Games and architecture emulator are stored on SD card.[<img loading="lazy" class="aligncenter size-medium wp-image-348" alt="" src="https://www.uelectronics.info/wp-content/uploads/2014/04/wsb_394x296_MCC_216_webpage-300x225.jpg" width="300" height="225" srcset="https://www.uelectronics.info/wp-content/uploads/2014/04/wsb_394x296_MCC_216_webpage-300x225.jpg 300w, https://www.uelectronics.info/wp-content/uploads/2014/04/wsb_394x296_MCC_216_webpage.jpg 394w" sizes="(max-width: 300px) 100vw, 300px" />](https://www.uelectronics.info/wp-content/uploads/2014/04/wsb_394x296_MCC_216_webpage.jpg)
 
 Hardware Specification:
 
@@ -45,6 +45,6 @@ The back panel supports:
 
 &nbsp;
 
-You can buy MCC online: [MCC e-shop](http://s318412817.e-shop.info/shop/page/16)
+You can buy MCC online: [MCC e-shop](https://s318412817.e-shop.info/shop/page/16)
 
 &nbsp;

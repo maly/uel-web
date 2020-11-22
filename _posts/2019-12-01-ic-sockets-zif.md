@@ -4,7 +4,7 @@ title: IC Sockets ZIF
 date: 2019-12-01T17:44:40+01:00
 author: RSS reader
 layout: post
-guid: http://www.uelectronics.info/2019/12/01/ic-sockets-zif/
+guid: https://www.uelectronics.info/2019/12/01/ic-sockets-zif/
 permalink: /2019/12/01/ic-sockets-zif/
 rss_pi_source_url:
   - https://alitronik.com/ic-sockets-zif/
